@@ -133,8 +133,9 @@ Flow of events
 2. Harry enters his username and presses the Send reset email button. 
 3. The system will send a link to his registered email address where he can type in a new password.
 4. He is then returned to Hackernews, where he can log in with the new password.
----
+
 =============================================
+
 ---
 ##### Interact With a Post
 
@@ -333,7 +334,27 @@ Flow of events
 
 **==================================================**
 
-5. Update User
+**Use case name**		Update User
+
+---
+**Participating actors**	Registerd User               
+
+---
+Flow of events 
+1.  User decides to change his info so he clicks on his profile.
+2.  User clicks on his username and is displayed his profile overview.
+3.  He fulfills all tha inputs he wants to change and after click on update button everything is logged into system.
+        
+---
+**Entry Conditions**		The user is logged into Hackernews.
+
+---
+**Exit conditions**		The user’s profile changes are sucessfully integrated into his profile.
+
+---
+**Quality requirements**
+
+---
 #### Object model
 TODO
 #### Dynamic model
