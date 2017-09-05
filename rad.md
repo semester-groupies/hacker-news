@@ -91,9 +91,7 @@
 
 #### Scenarios
 ##### Signing In
----
-=============================================
----
+**==================================================**
 **Scenario name**		Not a registered user
 
 ---
@@ -104,9 +102,7 @@ Flow of events
 1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
 2. If the username is already taken, he will be given the option to try again. 
 3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
----
-=============================================
----
+**==================================================**
 **Scenario name**		A registered user
 
 ---
@@ -117,9 +113,7 @@ Flow of events
 1. Harry, a user who has previously registered on the website, wants to use the features that require him to be logged in.
 2. He enters his username and password, and is then logged into the site.
 3. He can now use the extra features.
----
-=============================================
----
+**==================================================**
 **Scenario name**		Forgotten password
 
 ---
