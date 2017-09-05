@@ -91,7 +91,8 @@
 
 #### Scenarios
 ##### Signing In
- 1. Not a registered user
+---
+=============================================
 ---
 **Scenario name**		Not a registered user
 
@@ -104,12 +105,12 @@ Flow of events
 2. If the username is already taken, he will be given the option to try again. 
 3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
 ---
- 2. A registered user
+=============================================
 ---
-Scenario name			A registered user
+**Scenario name**		A registered user
 
 ---
-Participating actor		Harry, a previous user instance
+**Participating actor**		Harry, a previous user instance
 
 ---
 Flow of events
@@ -117,12 +118,12 @@ Flow of events
 2. He enters his username and password, and is then logged into the site.
 3. He can now use the extra features.
 ---
- 3. Forgotten password
+=============================================
 ---
-Scenario name				Forgotten password
+**Scenario name**		Forgotten password
 
 ---
-Participating actor			Harry, a previous user instance
+**Participating actor**		Harry, a previous user instance
 
 ---
 Flow of events
@@ -131,31 +132,158 @@ Flow of events
 3. The system will send a link to his registered email address where he can type in a new password.
 4. He is then returned to Hackernews, where he can log in with the new password.
 ---
+=============================================
+---
 ##### Interact With a Post
- 1. Create a post
- 2. Comment on a post
- 3. Hide a post
- 4. Favorite a post
- 5. Upvote a post
- 6. Google a post
+---
+=============================================
+---
+**Scenario name**               Create a post
+
+---
+**Participating actor**        	User instance            
+
+---
+Flow of events
+1.  A user who decided to submit a new post, logs in into the system.
+2.  He clicks submit, fulfill all the necessary fields and click submit. 
+3.  If everything is ok, user’s post will appear in a feed
+---
+=============================================
+---
+**Scenario name**               Comment on a post
+
+---
+**Participating actor**         User instance
+
+---
+Flow of events
+1.  Logged user wants to comment specific post.
+2.  He clicks on comments underneath the post which points him to new view where he is able to view other comments as well as submit his own.
+3.  He writes comment and submit it.
+---
+=============================================
+---
+**Scenario name**               Hide a post
+
+---
+**Participating actor**         User instance
+
+---
+Flow of events
+1.  User does not like a post so he decides to hide it.
+2.  He clicks on hide button under the post.
+3.  The newsfeed will refresh without the hidden post.
+---
+=============================================
+---
+**Scenario name**               Favorite a post
+
+---
+**Participating actor**         User instance
+
+---
+Flow of events
+1.  User likes a post so he decides to bookmark it as favorite.
+2.  User clicks timestamp and he is redirected to “comment” view. 
+3.  He clicks favorite and he is redirected to favorites section.
+---
+=============================================
+---
+**Scenario name**               Upvote a post
+
+---
+**Participating actor**         User instance
+
+---
+Flow of events
+1.  User likes a post so he decides to upvote it.
+2.  He clicks on arrow button next to the post button.
+3.  The post is now upvoted with new option to unvote it underneath.
+---
+=============================================
+---
+**Scenario name**               Search for a post
+
+---
+**Participating actor**         Visitor, User instance
+
+---
+Flow of events
+1.  User/Visitor decides to search for s specific post, so he clicks in a search bar.
+2.  User/Visitor enters keywords and hits enter. 
+3.  User/Visitor is shown search results in a new window.
+---
+=============================================
+---
 ##### Monitor Activity on Website
- 1. Leaders (users with most karma)
- 2. Front
- 3. Best
- 4. Active
- 5. Best comments
- 6. Noob stories
- 7. Noob comments
+ * Leaders (users with most karma)
+ * Front
+ * Best
+ * Active
+ * Best comments
+ * Noob stories
+ * Noob comments
 ##### Handle Inappropriate Behaviour
- 1. Ban IP address
- 2. Flag a comment
- 3. Reporting Instances of Copyright Infringement
+ * Ban IP address
+ * Flag a comment
+ * Reporting Instances of Copyright Infringement
 ##### Update User
- 1. Write an “about” section
- 2. Add email
- 3. Change password
- 4. Limit no. of profile visits
- 5. Stop procrast
+---
+=============================================
+---
+**Scenario name**               Write an “about” section
+
+---
+**Participating actor**         User instance            
+
+---
+Flow of events
+1.  A logged user who decided to change his about section, logs in into the system.
+2.  He clicks on his username, fulfill “about” section and clicks update. 
+---
+=============================================
+---
+**Scenario name**               Add email
+
+---
+**Participating actor**         User instance
+
+---
+Flow of events
+1.  A logged user who decided to add his email, logs in into the system.
+2.  He clicks on his username, fulfill “email” input and clicks update. 
+---
+=============================================
+---
+ * Change password **TODO**
+---
+=============================================
+---
+**Scenario name**               Limit no. of profile visits
+
+---
+**Participating actor**         User instance
+
+---
+Flow of events
+1.  A logged user who decided to restrict visitors on his profile logs in into the system.
+2.  He clicks on his username, and chooses desired limit on visitors.
+---
+=============================================
+---
+**Scenario name**               Stop procrast
+
+---
+**Participating actor**         User instance
+
+---
+Flow of events
+1.  User decides to restrict his own access to the website.
+2.  User clicks on his username and in his profile he activates/deactivates noprocrast mode.
+---
+=============================================
+---
 #### Use case model
 1. Signing In
 2. Interact With a Post
