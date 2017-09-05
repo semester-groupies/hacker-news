@@ -1,6 +1,6 @@
 # Requirements Analysis Document
 
-> This is the Requirements Analysis Document (RAD) for creating the clone of Hacker News Website. We have made the following structure of the document, making it easy to explore the content, and to quickly navigate to specific parts of the RAD.
+This is the Requirements Analysis Document (RAD) for creating the clone of Hacker News Website. We have made the following structure of the document, making it easy to explore the content, and to quickly navigate to specific parts of the RAD.
 
 1. [**Introduction**](#introduction)
 	1. [Purpose of the system](#purpose-of-the-system)
