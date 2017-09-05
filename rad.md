@@ -283,9 +283,9 @@ Flow of events
 Flow of events
 1.  A logged user who decided to add his email, logs in into the system.
 2.  He clicks on his username, fulfill “email” input and clicks update. 
----
-=============================================
----
+
+**==================================================**
+
  * Change password **TODO**
 
 **==================================================**
