@@ -300,7 +300,28 @@ Flow of events
 
 ---
 #### Use case model
-1. Signing In
+
+**Use case name**		Signing In
+
+---
+**Participating actors**	Initiated by User				
+
+---
+Flow of events	
+1. A user decides he/she wants to use the features that require being logged into Hackernews.
+2. The user creates a new username and password, or logs in with the username and password that they already have created.
+3. The user has the option to change their password if they have forgotten it.
+		
+---
+**Entry Conditions**		The user is not logged into Hackernews.
+
+---
+**Exit conditions**		The user is now registered and logged in to Hackernews.
+
+---
+**Quality requirements**
+* The users username is unique.
+* The users password is stored safely.
 
 **==================================================**
 
