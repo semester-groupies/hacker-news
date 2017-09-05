@@ -394,10 +394,10 @@ Flow of events
 **Quality requirements**
 
 ---
-#### Object model
+#### ~~Object model~~
 TODO
-#### Dynamic model
+#### ~~Dynamic model~~
 TODO
-#### User interface—navigational paths and screen mock-ups
+#### ~~User interface—navigational paths and screen mock-ups~~
 TODO
 ## Glossary
