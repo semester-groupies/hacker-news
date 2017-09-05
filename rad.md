@@ -8,10 +8,8 @@ This is the Requirements Analysis Document (RAD) for creating the clone of Hacke
 	1. [Objectives and success criteria of the project](#objectives-and-success-criteria-of-the-project)
 	1. [Definitions, acronyms, and abbreviations](#definitions-acronyms-and-abbreviations)
 	1. [References](#references)
-	1. [Overview](#overview)
 2. [**Current system**](#current-system)
 3. [**Proposed system**](#proposed-system)
-	1. [Overview](#overview)
 	1. [Functional requirements](#functional-requirements)
 	1. [Nonfunctional requirements](#nonfunctional-requirements)
 		1. [*Usability*](#usability)
@@ -33,7 +31,7 @@ This is the Requirements Analysis Document (RAD) for creating the clone of Hacke
 ---
 
 ## Introduction
-
+Some background on project:
 ### Purpose of the system
 The purpose of the system is to create a working clone of the Hackernews website, with as much of the functionality that is possible. The reason we are making this project is as an assignment for the module in Large System Development, as part of the Bachelor in Software Development course at CPHBusiness in Lyngby.
 ### Scope of the system
@@ -60,16 +58,12 @@ Up-vote		|	Giving a story a positive vote.
 Karma		|	The points earned by a user, the total number of up-votes received.
 ### References
 https://news.ycombinator.com/
-### Overview
-
 ## Current system
 We have not developed our version of the system yet. The system that exists is the Hackernews website at https://news.ycombinator.com/news. Our project task is to create a clone of this website with as much of the functionality as possible.
 
 We will use this website for research into how we should develop the features and try to achieve our objectives.
 ## Proposed system
-
-### Overview
-
+What is needed for the new system:
 ### Functional requirements
 * Unregistered users should be able to read stories posted on the website
 * Users should be able to register so that they can log in to use the extended features.
@@ -107,7 +101,7 @@ We will use this website for research into how we should develop the features an
 
 ### Systemmodels
 
-#### Scenarios
+#### Scenarios:
 ##### Signing In
 **==================================================**
 
@@ -395,9 +389,7 @@ Flow of events
 
 ---
 #### ~~Object model~~
-TODO
 #### ~~Dynamic model~~
-TODO
 #### ~~User interface—navigational paths and screen mock-ups~~
-TODO
 ## Glossary
+TODO
