@@ -35,19 +35,37 @@
 ## Introduction
 
 ### Purpose of the system
-
+The purpose of the system is to create a working clone of the Hackernews website, with as much of the functionality that is possible. The reason we are making this project is as an assignment for the module in Large System Development, as part of the Bachelor in Software Development course at CPHBusiness in Lyngby.
 ### Scope of the system
+We are going to make a clone of Hackernews. Hackernews is a website where registered users can post stories. As well as this, Hackernews enables discussions to take place by allowing users to write comments on stories, and on other’s comments.
 
+Users can also vote-up and down-vote content, providing they have earned enough karma points(500), which are earned by users receiving up-votes on their content, minus the number of down-votes.
 ### Objectives and success criteria of the project
-
+Our objectives and success criteria have been outlined as part of the project. We must:
+1. Build a web application that can ingest new stories.
+2. Present an overview of the stories.
+3. Let users up-vote and down-vote published stories and comments.
+4. Award karma points to users for their positive voting.
+5. Store the content and user information in a database.
+6. Make a REST API so that external programs can access the information, and query the state of our system.
+7. Make sure that our program is up and running 95% of the time, even if we are running maintenance or upgrades.
 ### Definitions, acronyms, and abbreviations
+Important terms are as follows:
 
+Term | Definition 
+----------------|----------------------
+User		|	A user of Hackernews.
+Story		|	A story that has a link added to Hackernews, by a user.
+Up-vote		|	Giving a story a positive vote.
+Karma		|	The points earned by a user, the total number of up-votes received.
 ### References
-
+https://news.ycombinator.com/
 ### Overview
 
 ## Current system
+We have not developed our version of the system yet. The system that exists is the Hackernews website at https://news.ycombinator.com/news. Our project task is to create a clone of this website with as much of the functionality as possible.
 
+We will use this website for research into how we should develop the features and try to achieve our objectives.
 ## Proposed system
 
 ### Overview
@@ -298,9 +316,9 @@ Flow of events
 
 **==================================================**
 
----
 #### Use case model
 
+---
 **Use case name**		Signing In
 
 ---
