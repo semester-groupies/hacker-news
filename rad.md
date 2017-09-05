@@ -92,6 +92,8 @@
 #### Scenarios
 ##### Signing In
 **==================================================**
+
+---
 **Scenario name**		Not a registered user
 
 ---
@@ -102,7 +104,10 @@ Flow of events
 1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
 2. If the username is already taken, he will be given the option to try again. 
 3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+
 **==================================================**
+
+---
 **Scenario name**		A registered user
 
 ---
@@ -113,7 +118,10 @@ Flow of events
 1. Harry, a user who has previously registered on the website, wants to use the features that require him to be logged in.
 2. He enters his username and password, and is then logged into the site.
 3. He can now use the extra features.
+
 **==================================================**
+
+---
 **Scenario name**		Forgotten password
 
 ---
@@ -129,8 +137,9 @@ Flow of events
 =============================================
 ---
 ##### Interact With a Post
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Create a post
 
@@ -142,8 +151,9 @@ Flow of events
 1.  A user who decided to submit a new post, logs in into the system.
 2.  He clicks submit, fulfill all the necessary fields and click submit. 
 3.  If everything is ok, user’s post will appear in a feed
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Comment on a post
 
@@ -155,8 +165,9 @@ Flow of events
 1.  Logged user wants to comment specific post.
 2.  He clicks on comments underneath the post which points him to new view where he is able to view other comments as well as submit his own.
 3.  He writes comment and submit it.
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Hide a post
 
@@ -168,8 +179,9 @@ Flow of events
 1.  User does not like a post so he decides to hide it.
 2.  He clicks on hide button under the post.
 3.  The newsfeed will refresh without the hidden post.
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Favorite a post
 
@@ -181,8 +193,9 @@ Flow of events
 1.  User likes a post so he decides to bookmark it as favorite.
 2.  User clicks timestamp and he is redirected to “comment” view. 
 3.  He clicks favorite and he is redirected to favorites section.
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Upvote a post
 
@@ -194,8 +207,9 @@ Flow of events
 1.  User likes a post so he decides to upvote it.
 2.  He clicks on arrow button next to the post button.
 3.  The post is now upvoted with new option to unvote it underneath.
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Search for a post
 
@@ -207,8 +221,9 @@ Flow of events
 1.  User/Visitor decides to search for s specific post, so he clicks in a search bar.
 2.  User/Visitor enters keywords and hits enter. 
 3.  User/Visitor is shown search results in a new window.
----
-=============================================
+
+**==================================================**
+
 ---
 ##### Monitor Activity on Website
  * Leaders (users with most karma)
@@ -223,8 +238,9 @@ Flow of events
  * Flag a comment
  * Reporting Instances of Copyright Infringement
 ##### Update User
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Write an “about” section
 
@@ -235,8 +251,9 @@ Flow of events
 Flow of events
 1.  A logged user who decided to change his about section, logs in into the system.
 2.  He clicks on his username, fulfill “about” section and clicks update. 
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Add email
 
@@ -251,8 +268,9 @@ Flow of events
 =============================================
 ---
  * Change password **TODO**
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Limit no. of profile visits
 
@@ -263,8 +281,9 @@ Flow of events
 Flow of events
 1.  A logged user who decided to restrict visitors on his profile logs in into the system.
 2.  He clicks on his username, and chooses desired limit on visitors.
----
-=============================================
+
+**==================================================**
+
 ---
 **Scenario name**               Stop procrast
 
@@ -275,14 +294,45 @@ Flow of events
 Flow of events
 1.  User decides to restrict his own access to the website.
 2.  User clicks on his username and in his profile he activates/deactivates noprocrast mode.
----
-=============================================
+
+**==================================================**
+
 ---
 #### Use case model
 1. Signing In
-2. Interact With a Post
+
+**==================================================**
+
+**Use case name**		Interact With a Post
+
+---	
+**Participating actors**	Registerd User, Visitor
+
+---
+Flow of events 
+1.  Either a user or a visitor decides to somehow interact with a post.
+2.  Depending on action he is either permitted or not to do an action.
+3.  If interaction was legal (User or Visitor had the right permission) the interaction is logged into system.
+        
+---
+**Entry Conditions**		The user is logged into Hackernews.
+
+---
+**Exit conditions**		The user’s interaction is registered and logged in to Hackernews.
+
+---
+**Quality requirements**
+
+**==================================================**
+
 3. Monitor Activity on Website
+
+**==================================================**
+
 4. Handle Inappropriate Behaviour
+
+**==================================================**
+
 5. Update User
 #### Object model
 TODO
