@@ -239,11 +239,77 @@ Flow of events
 
 ---
 ##### Monitor Activity on Website
- * Leaders (users with most karma)
- * Front
- * Best
- * Active
- * Best comments
+**==================================================**
+
+---
+**Scenario name**		Leaders (users with most karma)
+
+---
+**Participating actor**		FREDDY TODO			
+
+---
+Flow of events
+1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
+2. If the username is already taken, he will be given the option to try again. 
+3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+
+**==================================================**
+
+---
+**Scenario name**		Front
+
+---
+**Participating actor**		FREDDY TODO			
+
+---
+Flow of events
+1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
+2. If the username is already taken, he will be given the option to try again. 
+3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+
+**==================================================**
+
+---
+**Scenario name**		Best
+
+---
+**Participating actor**		FREDDY TODO			
+
+---
+Flow of events
+1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
+2. If the username is already taken, he will be given the option to try again. 
+3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+
+**==================================================**
+
+---
+**Scenario name**		Active
+
+---
+**Participating actor**		FREDDY TODO			
+
+---
+Flow of events
+1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
+2. If the username is already taken, he will be given the option to try again. 
+3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+
+**==================================================**
+
+---
+**Scenario name**		Best comments
+
+---
+**Participating actor**		FREDDY TODO			
+
+---
+Flow of events
+1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
+2. If the username is already taken, he will be given the option to try again. 
+3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+
+**==================================================**
  * Noob stories
  * Noob comments
 ##### Handle Inappropriate Behaviour
