@@ -17,8 +17,6 @@ This is the Requirements Analysis Document (RAD) for creating the clone of Hacke
 		1. [*Performance*](#performance)
 		1. [*Supportability*](#supportability)
 		1. [*Implementation*](#implementation)
-		1. [*Interface*](#interface)
-		1. [*Packaging*](#packaging)
 		1. [*Legal*](#legal)
 	1. [Systemmodels](#systemmodels)
 		1. [*Scenarios*](#scenarios)
@@ -56,6 +54,7 @@ User		|	A user of Hackernews.
 Story		|	A story that has a link added to Hackernews, by a user.
 Up-vote		|	Giving a story a positive vote.
 Karma		|	The points earned by a user, the total number of up-votes received.
+HNC		|	Hacker News Clone (the proposed system)
 ### References
 https://news.ycombinator.com/
 ## Current system
@@ -82,26 +81,27 @@ What is needed for the new system:
 * The system must have a 95% uptime from 2/11 until 14/12, even if we are undertaking maintenance etc.
 * Buffers must be in place to keep the system up to date during down times.
 ### Nonfunctional requirements
-(To be sorted)
-1. The new system has to look like the current system.
-2. The system needs to be accessible at least 95% of the time.
-3. The system content must be persisted to a database so in case of a break down the system will not loose data.
+Here are the different non-functional requirements:
 #### Usability
-
+* HNC needs to be accessible at least 95% of the time.
+* HNC has to look like the current system.
+* HNC must perform some kind of buffering for incoming stories and comments, so in case of maintenance or alike, the data will not be lost.
+* HNC must react whenever a story or comment is "flagged".
+* HNC needs to assist the user if that user has forgotten his / hers password.
 #### Reliability
-
+* All functions and components of the project code is to be tested during development to ensure functionality for the end-user once it hits production.
+* Automating the tests will give provide the project with code coverage statistics, where the system will keep at a minimum of 80 % code covered.
 #### Performance
-
+* Stories must be available to the other users upon creation of the author.
+* All stories, however, must be processed and cross checked for forbidden words. This will take little to no time for the system to complete.
 #### Supportability
-
+* The HNC will be not be browser dependent. It should be able to run on any browser with an active internet connection.
 #### Implementation
-
-#### Interface
-
-#### Packaging
-
+* The HNC will be implemented in a mix of Java and Javascript.
+* All mockups for the frontend will be made with paper prototype, seeing that it is easy to change things there.
 #### Legal
-
+* HNC will have requirements to its users, e.g., minimum age, rules of conduct on the website, spam rules, etc.
+* HNC does not support any kind of Instances of Copyright Infringement and any story or comment or alike will be deleted immidiately and user IP will be banned.
 ### Systemmodels
 
 #### Scenarios:
@@ -294,7 +294,7 @@ Flow of events
 
 ---
 Flow of events
-1. 
+1. TODO
 
 **==================================================**
 
@@ -306,7 +306,7 @@ Flow of events
 
 ---
 Flow of events
-1. 
+1. TODO
 
 **==================================================**
 
