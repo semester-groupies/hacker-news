@@ -146,11 +146,8 @@ Flow of events
 3. The system will send a link to his registered email address where he can type in a new password.
 4. He is then returned to Hackernews, where he can log in with the new password.
 
-=============================================
-
----
+**==================================================**
 ##### Interact With a Post
-
 **==================================================**
 
 ---
@@ -236,8 +233,6 @@ Flow of events
 3.  User/Visitor is shown search results in a new window.
 
 **==================================================**
-
----
 ##### Monitor Activity on Website
 **==================================================**
 
@@ -310,14 +305,78 @@ Flow of events
 3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
 
 **==================================================**
- * Noob stories
- * Noob comments
-##### Handle Inappropriate Behaviour
- * Ban IP address
- * Flag a comment
- * Reporting Instances of Copyright Infringement
-##### Update User
 
+---
+**Scenario name**		New User creating Stories
+
+---
+**Participating actor**		New User instance
+
+---
+Flow of events
+1.1  Logged user wants to submit a new story.
+1.2  The user clicks on the "submit" menu item from the menu list, a new view opens with a form allowing the user to submit a story.
+1.3  The user creates the story and submit it.
+
+2.1 A non logged in user wants to submit a new story.
+2.2 The user clicks on the "submit" menu item from the menu list, a new view opens to enable the user log-in before procceding.
+2.3 Upon log-in a new view opens with a form allowing the user to create and submit a new story.
+2.4  The user creates the story and submit it.
+
+**==================================================**
+
+---
+**Scenario name**		New User Comments
+
+---
+**Participating actor**		New User instance
+
+---
+Flow of events
+1.  Logged user wants to comment a story or another comment under a story.
+2. He clicks on comments underneath the post which points him to new view where he is able to view other comments as well as submit his own or comment on other comments.
+3.  He writes comment and submit it.
+
+**==================================================**
+##### Handle Inappropriate Behaviour
+**==================================================**
+
+---
+**Scenario name**		User ban
+
+---
+**Participating actor**		Admin instance
+
+---
+Flow of events
+
+1. An admin can see all flagged posts
+2. An admin can unflag post if it was flagged or ban 
+3. An admin can ban the user that generated a story with political content or other story that initialized a dispute
+
+**==================================================**
+ * Flag a comment TODO
+**==================================================**
+
+---
+**Scenario name**		Report a Post
+
+---
+**Participating actor**		User instance
+
+---
+Flow of events
+
+1. A user want to report a story that might be offencive or disturbing 
+2. A user flag a story by clickung the flag icon.
+3. The user is prompt to verify that the action was taken intentionally to avoid mistakes 
+4. The user confirms the intention of his action by clicking ok 
+5. The story is reported as spam/offencive/disturbing
+
+**==================================================**
+ * Reporting Instances of Copyright Infringement TODO
+**==================================================**
+##### Update User
 **==================================================**
 
 ---
