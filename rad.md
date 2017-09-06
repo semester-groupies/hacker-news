@@ -360,6 +360,7 @@ Flow of events
 
 **==================================================**
  * Flag a comment TODO
+
 **==================================================**
 
 ---
@@ -379,6 +380,7 @@ Flow of events
 
 **==================================================**
  * Reporting Instances of Copyright Infringement TODO
+
 **==================================================**
 ##### Update User
 **==================================================**
@@ -488,7 +490,25 @@ Flow of events
 
 **==================================================**
 
-3. Monitor Activity on Website
+**Use case name**		Monitor Activity on Website
+
+---
+**Participating actors**	Registered User, The system               
+
+---
+Flow of events 
+1. User decides to inspect the website "statistics" so he clicks on the List button.
+2. User clicks on the desired list and is taken to that list.
+3. User does whatever the user wants to do with the retrieved data.
+        
+---
+**Entry Conditions**		The user is logged in to Hackernews. The system is up and running (cannot be in maintenance mode).
+
+---
+**Exit conditions**		The system has provided a newly calculated list for the user.
+
+---
+**Quality requirements**	None.
 
 **==================================================**
 
@@ -499,7 +519,7 @@ Flow of events
 **Use case name**		Update User
 
 ---
-**Participating actors**	Registerd User               
+**Participating actors**	Registered User               
 
 ---
 Flow of events 
