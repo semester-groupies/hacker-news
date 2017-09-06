@@ -279,10 +279,10 @@ Flow of events
 
 ---
 Flow of events
-1. John is bored, and can't really come up with anything new, so he decides to check out what other people are discussing at the moment. But he doesn't want to see any post, he wants to see only those that are top rated right now.
+1. John is bored, and can't really come up with anything new, so he decides to check out what other people are reading at the moment. But he doesn't want to see any post, he wants to see only those that are top rated right now.
 2. John clicks on the List button, and find his list "Best" and clicks it.
 3. John is now shown, by App, the top rated links on it.
-4. John is glad, he has found an interesting discussion to partake in.
+4. John is glad, he has found an interesting link to read.
 
 **==================================================**
 
@@ -294,7 +294,10 @@ Flow of events
 
 ---
 Flow of events
-1. TODO
+1. John is bored, and can't really come up with anything new, so he decides to check out what other people are discussing at the moment. But he doesn't want to see any post, he wants to see only those that are most active right now.
+2. John clicks on the List button, and find his list "Active" and clicks it.
+3. John is now shown, by App, the most active stories on it.
+4. John is glad, he has found an interesting discussion to partake in.
 
 **==================================================**
 
@@ -306,7 +309,10 @@ Flow of events
 
 ---
 Flow of events
-1. TODO
+1. John is bored, and can't really come up with anything new, so he decides to check out what other people are discussing at the moment. But he doesn't want to see any post, he wants to see only those that have been blessed with the best comments right now.
+2. John clicks on the List button, and find his list "Best commments" and clicks it.
+3. John is now shown, by App, the best comments at the moment on it.
+4. John is glad, he has found clever people to learn from.
 
 **==================================================**
 
