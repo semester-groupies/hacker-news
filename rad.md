@@ -82,7 +82,10 @@ What is needed for the new system:
 * The system must have a 95% uptime from 2/11 until 14/12, even if we are undertaking maintenance etc.
 * Buffers must be in place to keep the system up to date during down times.
 ### Nonfunctional requirements
-
+(To be sorted)
+1. The new system has to look like the current system.
+2. The system needs to be accessible at least 95% of the time.
+3. The system content must be persisted to a database so in case of a break down the system will not loose data.
 #### Usability
 
 #### Reliability
@@ -240,13 +243,16 @@ Flow of events
 **Scenario name**		Leaders (users with most karma)
 
 ---
-**Participating actor**		FREDDY TODO			
+**Participating actor**		John (a user), App (the website) 			
 
 ---
 Flow of events
-1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
-2. If the username is already taken, he will be given the option to try again. 
-3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+1. John, a user of the Hacker News Website, reads a post which doesn't seem very credible / trustworthy. He knows that App has various lists of its users, one of them being a list of users with the most karma (received by up-voted posts).
+2. John clicks the link to navigate to the lists.
+3. App now shows all its lists, Leaders (most karma points) being among them.
+4. John chooses Leaders, and App provides a fresh view of its top users (those with most karma points).
+5. John sees the name of the same user on this list as the one who had written the post he only just read.
+6. John is relaxed, the post was authentic.
 
 **==================================================**
 
@@ -254,13 +260,14 @@ Flow of events
 **Scenario name**		Front
 
 ---
-**Participating actor**		FREDDY TODO			
+**Participating actor**		John (a user), App (the website)			
 
 ---
 Flow of events
-1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
-2. If the username is already taken, he will be given the option to try again. 
-3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+1. John feels for a Throwback Thursday. He wants to see old posts from the front page submissions, and clicks on the "list" button which App has put on the page.
+2. John finds the Front list and clicks it. App now gives clear instructions on how to use the list, and John is satisfied.
+3. John enters the date, in specified format, and retrieves the front page submissions from that day.
+4. John is pleased, he has a throwback Thursday.
 
 **==================================================**
 
@@ -268,13 +275,14 @@ Flow of events
 **Scenario name**		Best
 
 ---
-**Participating actor**		FREDDY TODO			
+**Participating actor**		John (a user), App (the website)			
 
 ---
 Flow of events
-1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
-2. If the username is already taken, he will be given the option to try again. 
-3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+1. John is bored, and can't really come up with anything new, so he decides to check out what other people are discussing at the moment. But he doesn't want to see any post, he wants to see only those that are top rated right now.
+2. John clicks on the List button, and find his list "Best" and clicks it.
+3. John is now shown, by App, the top rated links on it.
+4. John is glad, he has found an interesting discussion to partake in.
 
 **==================================================**
 
@@ -282,13 +290,11 @@ Flow of events
 **Scenario name**		Active
 
 ---
-**Participating actor**		FREDDY TODO			
+**Participating actor**		John (a user), App (the website)			
 
 ---
 Flow of events
-1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
-2. If the username is already taken, he will be given the option to try again. 
-3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+1. 
 
 **==================================================**
 
@@ -296,13 +302,11 @@ Flow of events
 **Scenario name**		Best comments
 
 ---
-**Participating actor**		FREDDY TODO			
+**Participating actor**		John (a user), App (the website)			
 
 ---
 Flow of events
-1. Bob, who has not used Hackernews before, decides he wants to use some of the features that require him to log in. At the log in page he fills in a username and password to create a new account.
-2. If the username is already taken, he will be given the option to try again. 
-3. If everything is ok, Bob will be logged into Hackernews, and be able to use the other features.
+1. 
 
 **==================================================**
 
