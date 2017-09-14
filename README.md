@@ -61,3 +61,6 @@ Team URL is:
 `hackernewsclone.slack.com`
 
 Log in with your credentials; check your email inbox. Write to PO/favl if any issues regarding login.
+
+---
+Added a GitHub Webhook for Jenkins.
