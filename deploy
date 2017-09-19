@@ -3,7 +3,7 @@ ssh root@favl.dk <<EOF
 cd ~/hacker-news-frontend/
 git pull
 npm install --production
-docker build -t favl/hacer-news-clone-frontend:latest .
+docker build -t favl/hacker-news-clone-frontend:latest .
 docker login -u favl -p "${DOCKERHUB_PWD}"
 docker push favl/hacker-news-clone-frontend:latest
 docker logout
