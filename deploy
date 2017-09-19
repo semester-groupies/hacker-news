@@ -10,6 +10,6 @@ docker logout
 docker pull favl/hacker-news-clone-frontend:latest
 docker stop hacker-news-frontend
 docker rm hacker-news-frontend
-docker run --name hacker-news-frontend -d -p 8080:8080 favl/hacker-news-clone-frontend:latest
+docker run --name hacker-news-frontend -d -p 80:8080 favl/hacker-news-clone-frontend:latest
 exit
 EOF
