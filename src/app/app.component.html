@@ -1,25 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="navbar-default navbar-fixed-top" style="background-color: orangered;" >
-  <ul class="nav navbar-nav" style="color: black;">
-    <li>
-      <a [routerLink]='["/feed"]' >test page</a>
-    </li>
-    <li>
-      <a [routerLink]='["/feed"]' >test page</a>
-    </li>
-    <li>
-      <a [routerLink]='["/feed"]' >test page</a>
-    </li>
-    <li>
-      <a [routerLink]='["/feed"]'>test page</a>
-    </li>
-
-  </ul>
+<div class="navbar-default">
+  <div class="container-fluid">
+    <div class="row">
+      <ul class="nav navbar-nav">
+        <li>
+          <a [routerLink]='["/feed"]'>feed</a>
+        </li>
+        <li>
+          <a [routerLink]='["/feed"]'>test page</a>
+        </li>
+        <li>
+          <a [routerLink]='["/feed"]'>test page</a>
+        </li>
+        <li>
+          <a [routerLink]='["/login"]'>login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
-
-
 <!--here is where the components are placed-->
-<div>
-  <router-outlet></router-outlet>
+<div class="container-fluid">
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-

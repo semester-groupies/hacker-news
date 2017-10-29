@@ -6,15 +6,20 @@ import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {FeedComponent} from './feed/feed.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {LoginComponent} from './login/login.component';
+import {HttpClientModule} from "@angular/common/http";
+import {ApiService} from "./api.service";
 
 const appRoutes: Routes = [
-  {path: 'feed', component: FeedComponent}
+  {path: 'feed', component: FeedComponent},
+  {path: 'login', component: LoginComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    FeedComponent
+    FeedComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -22,9 +27,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes,
       // { enableTracing : true}
     ),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
