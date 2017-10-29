@@ -11,6 +11,11 @@ export class ApiService {
     return this.http.post(this.URL + 'user/create', userObject);
   }
 
+  public loginUser(userObject) {
+    //this.http.post('url', 'body', 'options');
+    return this.http.post(this.URL + 'user/login', userObject);
+  }
+
   constructor(private http: HttpClient) {
 
   }

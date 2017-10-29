@@ -9,24 +9,26 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {LoginComponent} from './login/login.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ApiService} from "./api.service";
+import {ForgotComponent} from './forgot/forgot.component';
 
 const appRoutes: Routes = [
-  {path: 'feed', component: FeedComponent},
-  {path: 'login', component: LoginComponent}
+  {path: '', redirectTo: '/feed', pathMatch: 'full'},
+  {path: 'feed', component: FeedComponent, data: {title: 'Hacker News'}},
+  {path: 'login', component: LoginComponent, data: {title: 'Login'}},
+  {path: 'forgot', component: ForgotComponent, data: {title: 'Reset Password'}}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedComponent,
-    LoginComponent
+    LoginComponent,
+    ForgotComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes,
-      // { enableTracing : true}
-    ),
+    RouterModule.forRoot(appRoutes),
     NgbModule.forRoot(),
     HttpClientModule
   ],
