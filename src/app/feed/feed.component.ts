@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ApiService} from "../api.service";
+import {Item} from "../models/item";
 
 @Component({
   selector: 'app-feed',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedComponent implements OnInit {
 
-  constructor() { }
+  public items: Item[];
+  public selectedItem: Item;
 
-  ngOnInit() {
+  constructor(private api: ApiService) {
   }
 
+  getStories(): void {
+    this.api.getStories().then(items => {
+      return this.items = items
+    });
+  }
+
+  ngOnInit(): void {
+    this.getStories();
+  }
+
+  onSelect(item: Item): void {
+    this.selectedItem = item;
+  }
 }

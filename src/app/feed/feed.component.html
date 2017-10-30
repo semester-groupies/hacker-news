@@ -1,3 +1,7 @@
-<p>
-  feed works!
-</p>
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <span *ngFor="let post of items; let i = index">
+      <app-post [post]="post" [idx]="i + 1"></app-post>
+    </span>
+  </div>
+</div>

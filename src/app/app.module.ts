@@ -11,6 +11,7 @@ import {StoryComponent} from './story/story.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ApiService} from "./api.service";
 import {ForgotComponent} from './forgot/forgot.component';
+import { PostComponent } from './feed/post/post.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/feed', pathMatch: 'full'},
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     FeedComponent,
     LoginComponent,
     ForgotComponent,
-    StoryComponent
+    StoryComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
