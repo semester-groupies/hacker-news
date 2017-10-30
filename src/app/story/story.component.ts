@@ -17,7 +17,8 @@ export class StoryComponent implements OnInit {
 
   public postStory() {
     console.log('::posting story::');
-    let story = {
+    const story = {
+      'type': "story",
       'title': this.title,
       'url': this.url,
       'text': this.text

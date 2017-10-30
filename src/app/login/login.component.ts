@@ -18,18 +18,19 @@ export class LoginComponent implements OnInit {
   }
 
   public loginUser() {
-    let user = {
+    const user = {
       "username": this.username_login,
       "password": this.password_login
     };
 
     this.api.loginUser(user).subscribe((res) => {
+      localStorage.setItem('currentUser', JSON.stringify(user));
       console.log('user logged in: ', res);
     });
   }
 
   public createUser() {
-    let user = {
+    const user = {
       "username": this.username_register,
       "password": this.password_register
     };
