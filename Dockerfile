@@ -15,8 +15,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-# Your app binds to port 3000 so you'll use the EXPOSE instruction to have it mapped by the docker daemon:
+# Your app binds to port 4200 so you'll use the EXPOSE instruction to have it mapped by the docker daemon:
 EXPOSE 4200
-EXPOSE 49153
 
 CMD ["npm", "start"]
