@@ -16,22 +16,17 @@
   <tr style="height:10px"></tr>
   <tr>
     <td>
-      <form method="post" action="/r"><input type="hidden" name="fnid" value="sdyaMkFDdhN9CH7P7ALF94"><input
-        type="hidden" name="fnop" value="submit-page">
-        <script type="text/javascript">function tlen(el) {
-          var n = el.value.length - 80;
-          el.nextSibling.innerText = n > 0 ? n + ' too long' : '';
-        }</script>
+      <form method="post" action="/r">
         <table border="0">
           <tbody>
           <tr>
             <td>title</td>
-            <td><input type="text" name="title" value="" size="50" oninput="tlen(this)" onfocus="tlen(this)"><span
+            <td><input type="text" name="title" value="" size="50" [(ngModel)]="title"><span
               style="margin-left:10px"></span></td>
           </tr>
           <tr>
             <td>url</td>
-            <td><input type="text" name="url" value="" size="50"></td>
+            <td><input type="text" name="url" size="50" [(ngModel)]="url"></td>
           </tr>
           <tr>
             <td></td>
@@ -39,7 +34,7 @@
           </tr>
           <tr>
             <td>text</td>
-            <td><textarea name="text" rows="4" cols="49"></textarea></td>
+            <td><textarea rows="4" cols="49" name="text" [(ngModel)]="text"></textarea></td>
           </tr>
           <tr>
             <td></td>
