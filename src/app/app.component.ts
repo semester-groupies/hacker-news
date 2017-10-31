@@ -8,4 +8,15 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
   title = 'app';
+  public loggedUser: boolean;
+
+  public isLoggedIn() {
+    return this.loggedUser = (localStorage.getItem('currentUser') != null);
+  }
+
+  public logoutUser() {
+    if (this.isLoggedIn()) {
+      localStorage.removeItem('currentUser');
+    }
+  }
 }
