@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiService} from "../api.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-story',
@@ -12,11 +13,10 @@ export class StoryComponent implements OnInit {
   public url: string;
   public text: string;
 
-  constructor(private api: ApiService) {
+  constructor(private api: ApiService, private router: Router) {
   }
 
   public postStory() {
-    console.log('::posting story::');
     const story = {
       'type': "story",
       'title': this.title,
@@ -25,7 +25,7 @@ export class StoryComponent implements OnInit {
     };
 
     this.api.post(story).subscribe((res) => {
-      console.log('story posted', res);
+      this.router.navigate(['/feed']);
     });
   }
 

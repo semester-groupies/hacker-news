@@ -1,6 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
 import {AppComponent} from './app.component';
 import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
@@ -11,14 +10,18 @@ import {StoryComponent} from './story/story.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ApiService} from "./api.service";
 import {ForgotComponent} from './forgot/forgot.component';
-import { PostComponent } from './feed/post/post.component';
+import {PostComponent} from './feed/post/post.component';
+import {PluralSPipe} from './pipes/plural-s.pipe';
+import {TimeAgoPipe} from "time-ago-pipe";
+import { ItemdetailsComponent } from './itemdetails/itemdetails.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/feed', pathMatch: 'full'},
   {path: 'feed', component: FeedComponent, data: {title: 'Hacker News'}},
   {path: 'login', component: LoginComponent, data: {title: 'Login'}},
   {path: 'forgot', component: ForgotComponent, data: {title: 'Reset Password'}},
-  {path: 'story', component: StoryComponent, data: {title: 'Submit'}}
+  {path: 'story', component: StoryComponent, data: {title: 'Submit'}},
+  {path: 'item/:id', component: ItemdetailsComponent, data: {title: 'Comments'}}
 ];
 
 @NgModule({
@@ -28,7 +31,10 @@ const appRoutes: Routes = [
     LoginComponent,
     ForgotComponent,
     StoryComponent,
-    PostComponent
+    PostComponent,
+    PluralSPipe,
+    TimeAgoPipe,
+    ItemdetailsComponent
   ],
   imports: [
     BrowserModule,

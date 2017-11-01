@@ -26,7 +26,6 @@ export class LoginComponent implements OnInit {
     this.api.loginUser(user).subscribe((res) => {
       localStorage.setItem('currentUser', JSON.stringify(user));
       this.router.navigate(['/feed']);
-      console.log('user logged in: ', res);
     });
   }
 
@@ -39,7 +38,6 @@ export class LoginComponent implements OnInit {
     this.api.createUser(user).subscribe((res) => {
       localStorage.setItem('currentUser', JSON.stringify(user));
       this.router.navigate(['/feed']);
-      console.log('user created: ', res);
     });
   }
 
