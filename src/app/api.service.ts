@@ -29,9 +29,9 @@ export class ApiService {
       'pwd_hash': currentUser.password,
       'post_title': postObject['title'],
       'post_url': postObject['url'],
-      'post_parent': -1,
-      'hanesst_id': 21,
-      'post_text': postObject['text'],
+      'post_parent': postObject['post_parent'],
+      // 'hanesst_id': postObject['hannest_id'],
+      'post_text': postObject['text']
     };
     return this.http.post(this.URL + 'post', pObject);
   }

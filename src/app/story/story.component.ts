@@ -21,7 +21,9 @@ export class StoryComponent implements OnInit {
       'type': "story",
       'title': this.title,
       'url': this.url,
-      'text': this.text
+      'text': this.text,
+      'post_parent': -1
+      // 'hannest_id': null
     };
 
     this.api.post(story).subscribe((res) => {
