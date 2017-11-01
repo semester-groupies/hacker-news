@@ -25,17 +25,19 @@ export class ApiService {
 
   public post(postObject) {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    const currentPass = JSON.parse(localStorage.getItem('currentPass'));
     const pObject = {
-      'username': currentUser.username,
+      'username': currentUser,
       'post_type': postObject['type'],
-      'pwd_hash': currentUser.password,
+      'pwd_hash': currentPass,
       'post_title': postObject['title'],
       'post_url': postObject['url'],
-      'post_parent': -1,
-      'hanesst_id': 21,
-      'post_text': postObject['text'],
+      'post_parent': postObject['post_parent'],
+      'hanesst_id': 0,
+      'post_text': postObject['text']
     };
-    return this.http.post(this.URL + 'post', pObject);
+    console.log(pObject);
+    return this.http.post(this.URL + 'post/postItem', pObject);
   }
 
   public getStories(): Promise<Item[]> {

@@ -2,22 +2,30 @@
   <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
     <div class="navbar-default">
       <div class="container-fluid">
-        <div class="row">
-          <ul class="nav navbar-nav" style="margin-left: -15px; /*background-color: #ff6600;*/">
+        <div class="row" style="background-color: #ff6600;">
+          <ul class="nav navbar-nav" style="margin-left: -15px" >
             <li>
-              <a routerLink='/feed' routerLinkActive="active">news</a>
+              <a routerLink='/feed' routerLinkActive="active" style="color: black"><b>Hacker News Clone</b></a>
             </li>
             <li>
-              <a routerLink='/story' routerLinkActive="active">submit</a>
+              <a routerLink='/feed' routerLinkActive="active" style="color: black">news</a>
             </li>
             <li>
-              <a routerLink='/#' routerLinkActive="active">test page</a>
+              <a routerLink='/story' routerLinkActive="active" style="color: black">submit</a>
             </li>
             <li>
-              <a routerLink='/login' routerLinkActive="active" *ngIf="!isLoggedIn()">login</a>
+              <a routerLink='/#' routerLinkActive="active" style="color: black">test page</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav pull-right" style="margin-left: -15px; /*background-color: #ff6600;*/">
+            <li *ngIf="!isLoggedIn()">
+              <a routerLink='/login' routerLinkActive="active" *ngIf="!isLoggedIn()" style="color: black">login</a>
             </li>
             <li *ngIf="isLoggedIn()">
-              <a routerLink='/feed' routerLinkActive="active" (click)="logoutUser()">logout</a>
+              <a routerLink='/' style="color: black"><b>{{user}}</b></a>
+            </li>
+            <li *ngIf="isLoggedIn()">
+              <a routerLink='/feed' routerLinkActive="active" (click)="logoutUser()" style="color: black">logout</a>
             </li>
           </ul>
         </div>

@@ -17,6 +17,10 @@ export class AppComponent {
   public logoutUser() {
     if (this.isLoggedIn()) {
       localStorage.removeItem('currentUser');
+      localStorage.removeItem('currentPass');
     }
+  }
+  get user(): any {
+    return localStorage.getItem('currentUser').replace(/^"(.*)"$/, '$1');
   }
 }

@@ -12,7 +12,7 @@ import {ApiService} from "./api.service";
 import {ForgotComponent} from './forgot/forgot.component';
 import {PostComponent} from './feed/post/post.component';
 import {PluralSPipe} from './pipes/plural-s.pipe';
-import {TimeAgoPipe} from "time-ago-pipe";
+import {TimeAgoPipe} from 'time-ago-pipe';
 import { ItemdetailsComponent } from './itemdetails/itemdetails.component';
 import { CommentPageComponent } from './comment-page/comment-page.component';
 
