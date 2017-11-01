@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
 
     this.api.loginUser(user).subscribe((res) => {
       localStorage.setItem('currentUser', JSON.stringify(res['username']));
-      localStorage.setItem('currentPass', JSON.stringify(this.password_login));
+      localStorage.setItem('currentPass', JSON.stringify(res['password']));
         this.router.navigate(['/feed']);
     });
   }

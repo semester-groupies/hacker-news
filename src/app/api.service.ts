@@ -35,7 +35,7 @@ export class ApiService {
       'post_text': postObject['text']
     };
     console.log(pObject);
-    return this.http.post(this.URL + 'post', pObject);
+    return this.http.post(this.URL + 'post/postItem', pObject);
   }
 
   public getStories(): Promise<Item[]> {
