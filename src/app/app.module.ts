@@ -14,6 +14,7 @@ import {PostComponent} from './feed/post/post.component';
 import {PluralSPipe} from './pipes/plural-s.pipe';
 import {TimeAgoPipe} from "time-ago-pipe";
 import { ItemdetailsComponent } from './itemdetails/itemdetails.component';
+import { CommentPageComponent } from './comment-page/comment-page.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/feed', pathMatch: 'full'},
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     PostComponent,
     PluralSPipe,
     TimeAgoPipe,
-    ItemdetailsComponent
+    ItemdetailsComponent,
+    CommentPageComponent
   ],
   imports: [
     BrowserModule,

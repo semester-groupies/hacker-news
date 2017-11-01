@@ -1,5 +1,5 @@
 export class Item {
-  id: number;
+  _id: any;
   post_parent: number;
   post_type: string;
   post_text: string;

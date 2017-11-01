@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import 'rxjs/add/operator/switchMap';
 import {ActivatedRoute, ParamMap, Router} from "@angular/router";
 import {ApiService} from "../api.service";
@@ -11,12 +11,18 @@ import {Item} from "../models/item";
 })
 export class ItemdetailsComponent implements OnInit {
 
-  public item: Item;
+  public items: Item;
 
-  constructor(private route: ActivatedRoute, private router: Router, private api: ApiService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private api: ApiService) {
+    console.log(this.items);
+  }
 
   ngOnInit() {
-    // this.item = this.route.paramMap.switchMap((params: ParamMap) => this.api.getItem(params.get('id')));
+    const me = this;
+    this.route.paramMap.switchMap((params: ParamMap) => this.api.getItem(params.get('id'))).subscribe(res => {
+      me.items = res;
+      console.log(me.items);
+    });
   }
 
 }

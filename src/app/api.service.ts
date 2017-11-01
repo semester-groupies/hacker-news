@@ -2,11 +2,13 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Item} from "./models/item";
 import 'rxjs/add/operator/toPromise';
+import {Observable} from "rxjs/Observable";
 
 @Injectable()
 export class ApiService {
 
-  private URL = 'http://www.favl.dk:8080/';
+  // private URL = 'http://www.favl.dk:8080/';
+  private URL = 'http://localhost:8090/';
 
   constructor(private http: HttpClient) {
   }
@@ -47,10 +49,7 @@ export class ApiService {
     return Promise.reject(error.message || error);
   }
 
-  public getItem(id: any): Promise<Item> {
-    return this.http.get(this.URL + `item/${id}`)
-      .toPromise()
-      .then((res: Response) => res)
-      .catch(this.handleError);
+  public getItem(id: any): Observable<Item> {
+    return this.http.get(this.URL + `item/${id}`);
   }
 }

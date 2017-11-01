@@ -1,0 +1,12 @@
+
+
+
+<small>
+  {{item.score}} points by {{item.author}} {{item.created_at | timeAgo }} | <a routerLink="/item/{{item._id.low}}">reply</a>
+</small>
+<div *ngIf="item.comment_on" style="padding-left: 5%">
+ <div *ngFor="let sItem of item.comment_on">
+   <app-comment-page [item]="sItem"></app-comment-page>
+ </div>
+</div>
+

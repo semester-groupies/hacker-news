@@ -8,12 +8,15 @@ import {Item} from "../../models/item";
 })
 export class PostComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
-  @Input() post: Item;
-  @Input() idx: number;
+  }
+
+  @Input() post: Item;
+  @Input() idx: number;
 
   ngOnInit() {
+    console.log(JSON.stringify(this.post));
   }
 
 }
