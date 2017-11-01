@@ -17,6 +17,7 @@ export class AppComponent {
   public logoutUser() {
     if (this.isLoggedIn()) {
       localStorage.removeItem('currentUser');
+      localStorage.removeItem('currentPass');
     }
   }
   get user(): any {

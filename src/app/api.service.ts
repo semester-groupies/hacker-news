@@ -23,16 +23,18 @@ export class ApiService {
 
   public post(postObject) {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    const currentPass = JSON.parse(localStorage.getItem('currentPass'));
     const pObject = {
-      'username': currentUser.username,
+      'username': currentUser,
       'post_type': postObject['type'],
-      'pwd_hash': currentUser.password,
+      'pwd_hash': currentPass,
       'post_title': postObject['title'],
       'post_url': postObject['url'],
       'post_parent': postObject['post_parent'],
-      // 'hanesst_id': postObject['hannest_id'],
+      'hanesst_id': postObject['hannest_id'],
       'post_text': postObject['text']
     };
+    console.log(pObject);
     return this.http.post(this.URL + 'post', pObject);
   }
 
