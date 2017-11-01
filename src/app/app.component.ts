@@ -19,4 +19,7 @@ export class AppComponent {
       localStorage.removeItem('currentUser');
     }
   }
+  get user(): any {
+    return localStorage.getItem('currentUser').replace(/^"(.*)"$/, '$1');
+  }
 }
