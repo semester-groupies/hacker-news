@@ -7,8 +7,8 @@ import {Observable} from "rxjs/Observable";
 @Injectable()
 export class ApiService {
 
-  // private URL = 'http://www.favl.dk:8080/';
-  private URL = 'http://localhost:8090/';
+  private URL = 'http://www.favl.dk:8080/';
+  // private URL = 'http://localhost:8090/';
 
   constructor(private http: HttpClient) {
   }

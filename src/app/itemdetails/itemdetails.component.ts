@@ -12,6 +12,9 @@ import {Item} from "../models/item";
 export class ItemdetailsComponent implements OnInit {
 
   public items: Item;
+  private title = " ";
+  private url = " ";
+  public text: string;
 
   constructor(private route: ActivatedRoute, private router: Router, private api: ApiService) {
     console.log(this.items);
@@ -22,6 +25,20 @@ export class ItemdetailsComponent implements OnInit {
     this.route.paramMap.switchMap((params: ParamMap) => this.api.getItem(params.get('id'))).subscribe(res => {
       me.items = res;
       console.log(me.items);
+    });
+  }
+
+  createComment() {
+    const comment = {
+      'type': "comment",
+      'title': this.title,
+      'url': this.url,
+      'text': this.text,
+      'post_parent': this.items._id.low
+    };
+
+    this.api.post(comment).subscribe((res) => {
+      this.router.navigate(['/item/' + this.items._id]);
     });
   }
 
