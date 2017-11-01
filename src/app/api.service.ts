@@ -13,7 +13,7 @@ export class ApiService {
 
   public createUser(userObject) {
     // this.http.post('url', 'body', 'options');
-    return this.http.post(this.URL + 'user/create', userObject);
+    return this.http.post(this.URL + 'user/register', userObject);
   }
 
   public loginUser(userObject) {
@@ -34,7 +34,6 @@ export class ApiService {
       'post_text': postObject['text'],
     };
     return this.http.post(this.URL + 'post', pObject);
-
   }
 
   public getStories(): Promise<Item[]> {
@@ -46,5 +45,12 @@ export class ApiService {
 
   private handleError(error: any): Promise<any> {
     return Promise.reject(error.message || error);
+  }
+
+  public getItem(id: any): Promise<Item> {
+    return this.http.get(this.URL + `item/${id}`)
+      .toPromise()
+      .then((res: Response) => res)
+      .catch(this.handleError);
   }
 }

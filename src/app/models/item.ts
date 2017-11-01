@@ -5,8 +5,8 @@ export class Item {
   post_text: string;
   post_title: string;
   post_url: string;
-  post_author: string;
+  author: string;
   created_at: Date;
   score: number;
-  comments: Item[];
+  comment_on: Item[];
 }

@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiService} from "../api.service";
 import {Item} from "../models/item";
+import * as _ from "lodash";
 
 @Component({
   selector: 'app-feed',
@@ -17,7 +18,8 @@ export class FeedComponent implements OnInit {
 
   getStories(): void {
     this.api.getStories().then(items => {
-      return this.items = items
+      const mapped = _.flatMap(items, i => i);
+      return this.items = _.filter(mapped, s => s.post_type === 'story');
     });
   }
 
