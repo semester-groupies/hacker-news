@@ -23,7 +23,7 @@ export class StoryComponent implements OnInit {
       'url': this.url,
       'text': this.text,
       'post_parent': -1,
-      'hannest_id': 1
+      'hannest_id': 0
     };
 
     this.api.post(story).subscribe((res) => {

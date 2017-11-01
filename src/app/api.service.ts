@@ -31,7 +31,7 @@ export class ApiService {
       'post_title': postObject['title'],
       'post_url': postObject['url'],
       'post_parent': postObject['post_parent'],
-      'hanesst_id': postObject['hannest_id'],
+      'hanesst_id': 0,
       'post_text': postObject['text']
     };
     console.log(pObject);
