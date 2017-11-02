@@ -129,7 +129,7 @@ def deploy() {
         docker stop hacker-news-frontend
         docker rm hacker-news-frontend
         docker pull favl/hacker-news-clone-frontend:latest
-        docker run --name hacker-news-frontend -d -p 80:4200 favl/hacker-news-clone-frontend:latest
+        docker run --name hacker-news-frontend -d --restart unless-stopped -p 80:4200 favl/hacker-news-clone-frontend:latest
         exit
         EOF'''
     }
