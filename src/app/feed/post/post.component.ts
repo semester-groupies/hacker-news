@@ -16,7 +16,6 @@ export class PostComponent implements OnInit {
   @Input() idx: number;
 
   ngOnInit() {
-    console.log(JSON.stringify(this.post));
   }
 
 }

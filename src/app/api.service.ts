@@ -7,8 +7,8 @@ import {Observable} from "rxjs/Observable";
 @Injectable()
 export class ApiService {
 
-  // private URL = 'http://www.favl.dk:8080/';
-  private URL = 'http://localhost:8090/';
+  private URL = 'http://www.favl.dk:8080/';
+  // private URL = 'http://localhost:8090/';
 
   constructor(private http: HttpClient) {
   }
@@ -36,7 +36,6 @@ export class ApiService {
       'hanesst_id': 0,
       'post_text': postObject['text']
     };
-    console.log(pObject);
     return this.http.post(this.URL + 'post/postItem', pObject);
   }
 
