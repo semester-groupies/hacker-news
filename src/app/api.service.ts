@@ -8,6 +8,7 @@ import {Observable} from "rxjs/Observable";
 export class ApiService {
 
   private URL = 'http://www.favl.dk:8080/';
+
   // private URL = 'http://localhost:8090/';
 
   constructor(private http: HttpClient) {
@@ -16,6 +17,11 @@ export class ApiService {
   public createUser(userObject) {
     // this.http.post('url', 'body', 'options');
     return this.http.post(this.URL + 'user/register', userObject);
+  }
+
+  public getCount() {
+    // this.http.post('url', 'body', 'options');
+    return this.http.get(this.URL + 'count');
   }
 
   public loginUser(userObject) {
@@ -39,8 +45,8 @@ export class ApiService {
     return this.http.post(this.URL + 'post/postItem', pObject);
   }
 
-  public getStories(): Promise<Item[]> {
-    return this.http.get(this.URL + 'stories')
+  public getStories(page): Promise<Item[]> {
+    return this.http.get(this.URL + 'stories?page=' + page)
       .toPromise()
       .then((res: Response) => res)
       .catch(this.handleError);

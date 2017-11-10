@@ -1,8 +1,9 @@
 <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <span *ngFor="let post of items | paginate: { itemsPerPage: 20, currentPage: p }; let i = index">
-      <app-post [post]="post" [idx]="i + 1"></app-post>
+    <span *ngFor="let post of items ; let i = index">
+      <app-post [post]="post" [idx]="p*10+(i + 1)"></app-post>
     </span>
-    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    <div *ngFor="let ite of sizeList | paginate: { itemsPerPage: 10, currentPage: p }" ></div>
+    <pagination-controls (pageChange)="p = $event; pageChanged($event)"></pagination-controls>
   </div>
 </div>

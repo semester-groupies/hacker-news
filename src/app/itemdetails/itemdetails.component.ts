@@ -34,11 +34,11 @@ export class ItemdetailsComponent implements OnInit {
       'title': this.title,
       'url': this.url,
       'text': this.text,
-      'post_parent': this.items._id.low
+      'post_parent': this.items.id
     };
 
     this.api.post(comment).subscribe((res) => {
-      this.router.navigate(['/item/' + this.items._id]);
+      this.router.navigate(['/item/' + this.items.id]);
     });
   }
 

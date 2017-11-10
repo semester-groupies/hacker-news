@@ -1,5 +1,5 @@
 export class Item {
-  _id: any;
+  id: any;
   post_parent: number;
   post_type: string;
   post_text: string;
@@ -9,4 +9,5 @@ export class Item {
   created_at: Date;
   score: number;
   comment_on: Item[];
+  comments: any;
 }
